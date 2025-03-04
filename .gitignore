@@ -1,3 +1,0 @@
-git add .gitignore
-git commit -m "Added project_database.db to .gitignore"
-git push origin main
