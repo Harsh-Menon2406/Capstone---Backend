@@ -3,12 +3,15 @@ from flask import Flask, jsonify, request
 from flask_sqlalchemy import SQLAlchemy
 from flask_cors import CORS
 import sqlite3
+import os
 
 app = Flask(__name__)
 CORS(app)
 
 # Connect to the SQLite database
-DATABASE = "C:/Users/harsh/OneDrive - UBC/4th year FILES/ENGR 499 - CAPSTONE/project_database.db"
+
+DATABASE = os.path.join(os.getcwd(), "project_database.db")
+
 
 
 def get_db_connection():
