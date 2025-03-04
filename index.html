@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Tag List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Master Tag List</h1>
+    <input type="text" id="searchInput" placeholder="Search by Tag No or Instrument Type">
+    <button onclick="searchTags()">Search</button>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>Tag No</th>
+                <th>Tag</th>
+                <th>Instrument Type</th>
+                <th>PID No</th>
+                <th>Datasheet Type</th>
+            </tr>
+        </thead>
+        <tbody id="masterTagListBody">
+            <!-- JavaScript will insert rows here -->
+        </tbody>
+    </table>
+
+    <script src="script.js"></script>
+</body>
+</html>
