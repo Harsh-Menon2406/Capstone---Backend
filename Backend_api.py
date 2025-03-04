@@ -10,8 +10,8 @@ CORS(app)
 
 # Connect to the SQLite database
 
-DATABASE = os.path.join(os.getcwd(), "project_database.db")
-
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATABASE = os.path.join(BASE_DIR, "project_database.db")
 
 
 def get_db_connection():
